@@ -1,0 +1,29 @@
+packages:
+  "framer-motion": "For premium page transitions, smooth tab switching, and micro-interactions"
+  "react-hook-form": "For robust and performant checkout form state management"
+  "@hookform/resolvers": "To integrate Zod validation with react-hook-form"
+  "sonner": "Beautiful, modern toast notifications for cart actions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes safely without conflicts"
+
+images:
+  - path: "artifacts/jojo-foods/public/images/hero-spread.png"
+    description: "A vibrant, mouth-watering overhead shot of a feast containing a juicy double cheeseburger, a slice of pepperoni pizza, and a colorful sushi roll. Bright warm background, appetizing lighting, high-end food photography, maximalist fast food style."
+    aspect_ratio: "16:9"
+  - path: "artifacts/jojo-foods/public/images/burger-mock.png"
+    description: "A mouth-watering double smash burger with melted cheese and sauce on a bright yellow background. Studio lighting, highly appetizing, pop art style."
+    aspect_ratio: "1:1"
+  - path: "artifacts/jojo-foods/public/images/pizza-mock.png"
+    description: "A delicious, cheesy slice of pepperoni pizza with a crispy crust on a warm red background. Studio lighting, appetizing, pop art style."
+    aspect_ratio: "1:1"
+  - path: "artifacts/jojo-foods/public/images/sushi-mock.png"
+    description: "A beautiful, fresh spicy tuna sushi roll with sauce drizzle on a soft mint green background. Studio lighting, highly appetizing, pop art style."
+    aspect_ratio: "1:1"
+  - path: "artifacts/jojo-foods/public/images/logo-icon.png"
+    description: "A fun, bold vector icon logo combining a burger, pizza slice, and sushi piece. Vibrant reds, yellows, and white. Clean, modern fast-food branding on transparent background."
+    aspect_ratio: "1:1"
+
+notes:
+  - Cart state is managed locally via React Context and persisted to localStorage.
+  - Delivery fees are hardcoded based on zone selection in the frontend to provide immediate UI feedback before submission.
+  - If the API returns an empty menu (e.g. fresh database), the frontend will render a high-quality fallback mock menu to ensure the app looks stunning immediately.
